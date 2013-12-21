@@ -1,5 +1,5 @@
 ﻿
-#if SILVERLIGHT || MONODROID
+#if SILVERLIGHT || __ANDROID__ || __IOS__
 namespace System.Diagnostics
 {
     public static class Trace

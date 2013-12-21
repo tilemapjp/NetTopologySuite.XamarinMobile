@@ -1,6 +1,6 @@
 using NetTopologySuite.Utilities;
 
-#if !WINDOWS_PHONE
+#if !WINDOWS_PHONE && !__ANDROID__ && !__IOS__
 using BitConverter = System.BitConverter;
 #else
 

@@ -34,7 +34,6 @@
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <ConsolePause>false</ConsolePause>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
     <DefineConstants>MONODROID</DefineConstants>
   </PropertyGroup>
   <ItemGroup>

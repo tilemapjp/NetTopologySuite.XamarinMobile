@@ -66,7 +66,9 @@ namespace GeoAPI
             foreach (var assembly in a)
             {
                 // Take a look at issue 114: http://code.google.com/p/nettopologysuite/issues/detail?id=114
+#if !__IOS__
                 if (assembly is System.Reflection.Emit.AssemblyBuilder) continue;
+#endif
                 if (assembly.GetType().FullName == "System.Reflection.Emit.InternalAssemblyBuilder") continue;
                 if (assembly.GlobalAssemblyCache && assembly.CodeBase == Assembly.GetExecutingAssembly().CodeBase) continue;
 
